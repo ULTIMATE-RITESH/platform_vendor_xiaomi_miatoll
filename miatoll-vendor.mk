@@ -956,6 +956,7 @@ PRODUCT_PACKAGES += \
     rmt_storage \
     sensors.qti \
     sscrpcd \
+    ssr_setup \
     tftp_server \
     thermal-engine \
     wfdhdcphalservice \
