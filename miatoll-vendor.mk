@@ -134,6 +134,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
@@ -149,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    vendor/xiaomi/miatoll/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ft8756_video_mode_dsi_huaxing_panel.xml \
@@ -360,6 +362,7 @@ PRODUCT_PACKAGES += \
     libadreno_app_profiles \
     libadreno_utils \
     libc2d30_bltlib \
+    libdapparamstorage \
     libdiag \
     libdsutils \
     libgpudataproducer \
@@ -626,8 +629,10 @@ PRODUCT_PACKAGES += \
     libcvp_common \
     libcvp_stub \
     libdataitems \
+    libdeccfg \
     libdisp-aba \
     libdisplayqos \
+    libdlbdsservice \
     libdng_sdk2vendor \
     libdpmqmihal \
     libdpps \
@@ -719,6 +724,11 @@ PRODUCT_PACKAGES += \
     libssc \
     libssd \
     libst_sr_models \
+    libstagefright_soft_ac4dec \
+    libstagefright_soft_ddpdec \
+    libhwdap \
+    libswgamedap \
+    libswvqe \
     libswregistrationalgo \
     libsymphony-cpu \
     libsynergy_loc_api \
@@ -911,6 +921,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_vendor.dolby.hardware.dms.xml \
     vendor.qti.gnss@4.0-service.xml \
     adpl \
     adsprpcd \
@@ -928,6 +939,9 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
+    vendor.dolby.hardware.dms@2.0 \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.media.c2@1.0-service \
